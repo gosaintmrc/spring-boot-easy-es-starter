@@ -10,10 +10,20 @@ import java.io.IOException;
  */
 public interface IndexTemplate {
     /**
+     * 同步方法，不是异步的创建索引
      * 创建一个索引并且存储json数据。设置ID
      * @param id
      * @param jsonStr
      * @param indexName 索引名称
      */
     void createIndexAndStorageJsonStr(String indexName,String id,String jsonStr) throws IOException;
+
+    /**
+     * 异步的创建索引
+     * @param indexName
+     * @param id
+     * @param jsonStr
+     * @throws IOException
+     */
+    void asynCreateIndexAndStorageJsonStr(String indexName,String id,String jsonStr) throws IOException;
 }
