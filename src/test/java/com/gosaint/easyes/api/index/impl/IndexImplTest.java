@@ -1,14 +1,13 @@
 package com.gosaint.easyes.api.index.impl;
 
-import java.io.IOException;
-import java.util.Map;
-
 import com.gosaint.easyes.SpringBootEasyEsStarterApplicationTests;
-import com.gosaint.easyes.api.index.IndexTemplate;
-
+import com.gosaint.easyes.api.index.IndexAPI;
 import org.elasticsearch.action.get.GetResponse;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * @Author: gosaint
@@ -17,8 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Modified By:
  */
 class IndexImplTest extends SpringBootEasyEsStarterApplicationTests {
-    @Autowired
-    private IndexTemplate indexTemplate;
+   /* @Autowired
+    private IndexAPI indexTemplate;
     @Test
     void createIndexAndStorageJsonStr() throws IOException {
         String jsonString = "{" +
@@ -38,5 +37,5 @@ class IndexImplTest extends SpringBootEasyEsStarterApplicationTests {
         for (Map.Entry<String, Object> entry : source.entrySet()){
             System.out.println(entry.getKey()+"===="+entry.getValue());
         }
-    }
+    }*/
 }
